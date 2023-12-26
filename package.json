@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "esbuild --watch"
+    "start": "esbuild --bundle --watch"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",

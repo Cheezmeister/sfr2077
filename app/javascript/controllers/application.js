@@ -1,4 +1,5 @@
 import { Application } from "@hotwired/stimulus"
+// import { greetings } from './sfr2077'
 
 const application = Application.start()
 

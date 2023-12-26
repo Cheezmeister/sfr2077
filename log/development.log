@@ -335,3 +335,449 @@ Completed 200 OK in 9ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1963)
   [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2605467632278770525)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/proteins" for 172.23.0.1 at 2023-12-23 09:56:51 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for ProteinsController):
+  
+actionpack (7.1.2) lib/abstract_controller/base.rb:155:in `process'
+actionview (7.1.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/proteins" for 172.23.0.1 at 2023-12-23 09:57:52 +0000
+  
+SyntaxError (/rails/app/controllers/proteins_controller.rb:8: syntax error, unexpected end-of-input):
+  
+app/controllers/proteins_controller.rb:8: syntax error, unexpected end-of-input
+Started GET "/proteins" for 172.23.0.1 at 2023-12-23 09:58:06 +0000
+  
+SyntaxError (/rails/app/controllers/proteins_controller.rb:8: syntax error, unexpected end-of-input):
+  
+app/controllers/proteins_controller.rb:8: syntax error, unexpected end-of-input
+Started GET "/proteins" for 172.23.0.1 at 2023-12-23 09:58:13 +0000
+Processing by ProteinsController#index as HTML
+Completed 406 Not Acceptable in 41ms (ActiveRecord: 0.0ms | Allocations: 7105)
+
+
+  
+ActionController::MissingExactTemplate (ProteinsController#index is missing a template for request formats: text/html):
+  
+actionpack (7.1.2) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.2) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.2) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.2) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+actiontext (7.1.2) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.2) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.2) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.2) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.2) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.2) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.2) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.2) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.2) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.2) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/proteins" for 172.23.0.1 at 2023-12-23 10:00:20 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 649.4ms | Allocations: 98533)
+Completed 200 OK in 662ms (Views: 654.5ms | ActiveRecord: 0.0ms | Allocations: 100154)
+
+
+Started GET "/proteins" for 172.23.0.1 at 2023-12-23 10:03:52 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 15737)
+Completed 200 OK in 81ms (Views: 75.8ms | ActiveRecord: 0.0ms | Allocations: 17217)
+
+
+Started GET "/proteins" for 172.23.0.1 at 2023-12-23 10:05:26 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 63.4ms | Allocations: 13261)
+Completed 200 OK in 75ms (Views: 68.3ms | ActiveRecord: 0.0ms | Allocations: 14735)
+
+
+Started GET "/" for 172.24.0.1 at 2023-12-23 10:17:51 +0000
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 3 pending migrations:
+
+db/migrate/20231222011633_create_proteins.rb
+db/migrate/20231222011647_create_vegetables.rb
+db/migrate/20231222011656_create_seasonings.rb
+
+
+):
+  
+activerecord (7.1.2) lib/active_record/migration.rb:754:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2605467632278770525)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2023-12-23 10:18:05.987549', '2023-12-23 10:18:05.987555') RETURNING "key"[0m
+Migrating to CreateProteins (20231222011633)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "proteins" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231222011633') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVegetables (20231222011647)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "vegetables" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231222011647') RETURNING "version"[0m
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSeasonings (20231222011656)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "seasonings" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231222011656') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2605467632278770525)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.24.0.1 at 2023-12-23 10:18:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 375)
+Completed 200 OK in 31ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4890)
+
+
+Started GET "/proteins" for 172.24.0.1 at 2023-12-23 10:18:19 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 1203.0ms | Allocations: 139854)
+Completed 200 OK in 1281ms (Views: 1206.4ms | ActiveRecord: 0.0ms | Allocations: 149705)
+
+
+Started GET "/proteins" for 172.24.0.1 at 2023-12-23 10:19:07 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 15077)
+Completed 200 OK in 49ms (Views: 43.1ms | ActiveRecord: 0.0ms | Allocations: 16560)
+
+
+Started GET "/proteins" for 172.24.0.1 at 2023-12-23 10:25:20 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 1146.4ms | Allocations: 151882)
+Completed 200 OK in 1199ms (Views: 1151.1ms | ActiveRecord: 0.0ms | Allocations: 161698)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/controllers/sfr2077"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets"):
+  
+Started GET "/proteins" for 172.24.0.1 at 2023-12-23 10:27:11 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 56.6ms | Allocations: 6464)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms | Allocations: 6728)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/controllers/sfr2077"):
+  
+Started GET "/proteins" for 172.24.0.1 at 2023-12-23 10:27:24 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 96.7ms | Allocations: 20671)
+Completed 200 OK in 106ms (Views: 101.7ms | ActiveRecord: 0.0ms | Allocations: 20936)
+
+
+Started GET "/proteins" for 172.24.0.1 at 2023-12-23 10:33:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 620.9ms | Allocations: 59546)
+Completed 200 OK in 701ms (Views: 628.0ms | ActiveRecord: 0.0ms | Allocations: 69361)
+
+
+Started GET "/proteins" for 172.24.0.1 at 2023-12-23 10:52:23 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 242.0ms | Allocations: 29567)
+Completed 200 OK in 264ms (Views: 246.7ms | ActiveRecord: 0.0ms | Allocations: 29832)
+
+
+Started GET "/proteins" for 172.24.0.1 at 2023-12-23 10:53:05 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 94.1ms | Allocations: 21655)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.0ms | Allocations: 23130)
+
+
+  
+ActionView::Template::Error (The asset "packs/application.js" is not present in the asset pipeline.
+):
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12:     <%= javascript_include_tag 'packs/application' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/proteins" for 172.24.0.1 at 2023-12-25 18:30:56 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 275.0ms | Allocations: 7791)
+Completed 500 Internal Server Error in 324ms (ActiveRecord: 0.0ms | Allocations: 8034)
+
+
+  
+ActionView::Template::Error (The asset "packs/application.js" is not present in the asset pipeline.
+):
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12:     <%= javascript_include_tag 'packs/application' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for 172.24.0.1 at 2023-12-26 00:05:44 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb (Duration: 24.1ms | Allocations: 271)
+Completed 200 OK in 76ms (Views: 44.7ms | ActiveRecord: 0.0ms | Allocations: 998)
+
+
+Started GET "/" for 172.24.0.1 at 2023-12-26 00:06:00 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 13)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/" for 172.24.0.1 at 2023-12-26 00:06:01 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 13)
+Completed 200 OK in 19ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/" for 172.24.0.1 at 2023-12-26 00:06:02 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb (Duration: 2.9ms | Allocations: 13)
+Completed 200 OK in 32ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/proteins" for 172.24.0.1 at 2023-12-26 00:10:19 +0000
+Processing by ProteinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering proteins/index.html.erb within layouts/application
+  Rendered proteins/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 242.3ms | Allocations: 7786)
+Completed 500 Internal Server Error in 253ms (ActiveRecord: 0.0ms | Allocations: 8022)
+
+
+  
+ActionView::Template::Error (The asset "packs/application.js" is not present in the asset pipeline.
+):
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12:     <%= javascript_include_tag 'packs/application' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/" for 172.24.0.1 at 2023-12-26 00:10:33 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/ruby/3.2.0/gems/railties-7.1.2/libtemplates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 13)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
