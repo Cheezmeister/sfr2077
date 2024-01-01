@@ -1,0 +1,35 @@
+<h2>Stir-Fry Roulette</h2>
+<script type="text/javascript" src="packs/application.js"></script>
+<div id="root"></div>
+
+<div class="flex">
+  <div class="flex-auto">
+    <h2>Proteins</h2>
+    <ul>
+      <% @proteins.each do |protein| %>
+        <li>
+          <%= protein.name %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="flex-auto">
+    <h2>Veggies</h2>
+    <ul>
+      <% @veggies.each do |veg| %>
+        <li>
+          <%= veg.name %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="flex-auto">
+    <h2>Seasonings</h2>
+    <ul>
+      <% @seasonings.each do |spice| %>
+        <li>
+          <%= spice.name %>
+        </li>
+      <% end %>
+    </ul>
+</div>

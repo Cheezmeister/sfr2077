@@ -1,4 +1,12 @@
 services:
+  node:
+    image: node:21
+    working_dir: /rails
+    volumes:
+      - .:/rails
+    command:
+      - 'npm'
+      - 'start'
   rails:
     image: sfr2077
     environment:
@@ -9,11 +17,6 @@ services:
       - "3000:3000"
     depends_on:
       - postgres
-    command:
-      - 'bin/rails'
-      - 'server'
-      - '-b'
-      - '0.0.0.0'
   postgres:
     image: postgres:latest
     environment:
