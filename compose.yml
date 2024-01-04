@@ -1,4 +1,12 @@
 services:
+  initialization:
+    image: node:21
+    working_dir: /rails
+    volumes:
+      - .:/rails
+    command:
+      - 'npm'
+      - 'install'
   node:
     image: node:21
     working_dir: /rails
@@ -7,16 +15,20 @@ services:
     command:
       - 'npm'
       - 'start'
+    depends_on:
+      - initialization
   rails:
     image: sfr2077
     environment:
       RAILS_ENV: development
+      RAILS_DEVELOPMENT_HOSTS: atreyu
     volumes:
       - .:/rails
     ports:
       - "3000:3000"
     depends_on:
       - postgres
+      - node
   postgres:
     image: postgres:latest
     environment:

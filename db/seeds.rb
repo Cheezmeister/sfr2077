@@ -7,3 +7,25 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+    ["Chicken", "Pork", "Beef", "Tofu", "Venison"].each do |protein|
+      Protein.find_or_create_by!(name: protein)
+    end
+
+    ["Carrot", "Broccoli", "Tomato", "Spinach", "Kale", "Potato", "Cauliflower"].each do |veg|
+      Vegetable.find_or_create_by!(name: veg)
+    end
+
+    [ 'garlic',
+      'cayenne',
+      'habanero',
+      'basil',
+      'saffron',
+      'salt',
+      'pepper',
+      'cumin',
+      'cloves',
+      'cinnamon',
+      'ginger'].each do |spice|
+      Seasoning.find_or_create_by!(name: spice)
+    end

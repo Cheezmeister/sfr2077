@@ -2,8 +2,8 @@ import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 const App = () => (
-  <div>
-    <h2>Hello again cruel world</h2>
+  <div id="app rounded border border-solid">
+    <h1 class="text-2xl font-bold">I'm a React Container!</h1>
   </div>
 );
 

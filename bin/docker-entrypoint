@@ -1,9 +1,13 @@
 #!/bin/bash -e
 
+# TODO: Ensure ./bin/rails tailwindcss:install is run once on first startup
+
 # If running the rails server then create or migrate existing database
 if [ "${1}" == "./bin/rails" ] && [ "${2}" == "server" ]; then
   echo " [${0}] Migrating db..."
   ./bin/rails db:migrate
+  echo " [${0}] Seeding db..."
+  ./bin/rails db:seed
   echo " [${0}] Done"
 fi
 
