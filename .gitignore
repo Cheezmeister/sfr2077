@@ -2,3 +2,6 @@
 !/app/assets/builds/.keep
 tmp/
 log/
+node_modules
+log/development.log
+public/packs/application.js
