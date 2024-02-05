@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     './app/views/**/*',
+    './app/javascript/packs/**/*',
     './public/*.html'
   ],
   theme: {
@@ -19,6 +20,12 @@ module.exports = {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+    },
+    variants: {
+      extend: {
+        borderWidth: ['responsive', 'hover', 'focus', 'active'],
+        borderColor ['responsive', 'hover', 'focus', 'active'],
+      },
     },
     extend: {
       spacing: {
