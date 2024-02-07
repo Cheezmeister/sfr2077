@@ -3,6 +3,9 @@
     "start": "esbuild app/javascript/packs/application.tsx --bundle --watch=forever --outfile=public/packs/application.js"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.7",
     "autoprefixer": "^10.4.16",
     "esbuild": "^0.19.11",
     "postcss": "^8.4.32",
