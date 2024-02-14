@@ -5,3 +5,7 @@
 It's a little Rails app to randomize a recipe 🤷 😋 
 
 It does the same exact thing as [sfr.js](https://github.com/Cheezmeister/luchenlabs/blob/master/src/raw/tidbits/js/sfr.js), but in a far more over-engineered way, befitting a real [rockstar](https://github.com/avinassh/rockstar/)!
+
+TODO: Add a little roadmap over in [issues](https://github.com/Cheezmeister/sfr2077/issues).
+* Intl
+* Add own ingredients

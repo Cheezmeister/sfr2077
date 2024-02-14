@@ -2,13 +2,25 @@ import React, { useState, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
+import Typography from '@mui/material/Typography';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Divider from '@mui/material/Divider';
+
+const LOCAL_STATE = {};
 
 const Recipe = () => {
     return (
       <>
-        <h2>Ingredients</h2>
+        <Typography variant="h2">Ingredients</Typography>
         <Alert severity="info">TODO</Alert>
-        <h2>Directions</h2>
+        <ol>
+          <li>{LOCAL_STATE.pantry.protein[2]}</li>
+          <li>{LOCAL_STATE.pantry.veggies[2]}</li>
+          <li>{LOCAL_STATE.pantry.seasonings[2]}</li>
+        </ol>
+        <Typography variant="h2">Directions</Typography>
         
         <ol>
           <li> Chop up veggies into reasonably-sized pieces. Best judgment. </li>
@@ -29,12 +41,31 @@ const Content = () => {
 
   const handleClick = () => setClickCount(clickCount + 1);
 
+  const inventory = (ingredientType: string, ingredientList: string[]) => (
+    <>
+      <Typography variant="h4">{ingredientType}</Typography>
+      { ingredientList.map(ingredient => <p>{`=> ${ingredient}`}</p>) }
+    </>
+  );
+
   return (
     <>
       <Button variant="contained" onClick={handleClick}>
         {(clickCount > 0 ? `Spun ${clickCount} times` : 'Spin!')}
       </Button>
       <Recipe />
+      <Divider />
+      <Accordion>
+        <AccordionSummary>
+          <Typography variant="h3">
+            🍴 What's in your Pantry
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+        {Object.entries(LOCAL_STATE.pantry).map(([k, v]) => inventory(k, v))}
+        </AccordionDetails>
+      </Accordion>
+
     </>
   );
 };
@@ -56,6 +87,13 @@ const after = (ms, fn) => window.setTimeout(fn, ms);
 after(50, () => {
   const rootEl = document.getElementById("react-root");
   const root = createRoot(rootEl);
+  try {
+    const payloadEl = document.getElementById('payload').innerText;
+    LOCAL_STATE.pantry = JSON.parse(payloadEl);
+  } catch (e: TypeError) {
+    console.error(`Reading Rails payload from DOM: ${e}`);
+  }
+
   root.render(
     <StrictMode>
       <App />

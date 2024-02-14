@@ -1,6 +1,17 @@
 <h1>Stir-Fry Roulette</h1>
+
 <script type="text/javascript" src="packs/application.js"></script>
 <div id="react-root"></div>
+
+<div id="payload" style="display: none">
+  {
+    "protein": <%= @proteins.map { |p| p.name }.to_json %>
+  , "veggies": <%= @veggies.map { |p| p.name }.to_json %>
+  , "seasonings": <%= @seasonings.map { |p| p.name }.to_json %>
+  }
+</div>
+
+<hr />
 
 <h2>I'm a Rails Template!</h2>
 <div id="rails" class="flex">
